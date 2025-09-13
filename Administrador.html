@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manual do Administrador - SystemIN</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="manual-page">
+  <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
+  <nav class="sidebar" aria-label="Menu de navegação">
+    <h2>Administrador</h2>
+    <ul>
+      <li><a href="#cadastrar-turma">Cadastrar Turma</a></li>
+      <li><a href="#visualizar-turmas">Visualizar Turmas</a></li>
+      <li><a href="#gerar-relatorios">Gerar Relatórios</a></li>
+      <li><a href="index.html">Voltar ao Início</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h1>Manual do Administrador</h1>
+
+    <section id="cadastrar-turma">
+      <h2>Cadastrar Turma</h2>
+      <p>O administrador pode criar novas turmas através do formulário de cadastro, preenchendo informações como nome da turma, horário, professor responsável, número de alunos e observações.</p>
+    </section>
+
+    <section id="visualizar-turmas">
+      <h2>Visualizar Turmas</h2>
+      <p>O administrador pode acessar a lista de turmas cadastradas e visualizar os dados organizados em planilhas específicas para cada turma.</p>
+    </section>
+
+    <section id="gerar-relatorios">
+      <h2>Gerar Relatórios</h2>
+      <p>O administrador pode gerar relatórios com os dados das turmas, exportando-os para planilhas para análise e acompanhamento.</p>
+    </section>
+  </main>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('nav.sidebar');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      hamburger.setAttribute('aria-expanded', !expanded);
+      sidebar.classList.toggle('open');
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', false);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

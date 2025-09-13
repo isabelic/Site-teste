@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manual do Representante - SystemIN</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="manual-page">
+  <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
+  <nav class="sidebar" aria-label="Menu de navegação">
+    <h2>Representante</h2>
+    <ul>
+      <li><a href="#preencher-formulario">Como preencher o formulário</a></li>
+      <li><a href="index.html">Voltar ao Início</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h1>Manual do Representante</h1>
+
+    <section id="preencher-formulario">
+      <h2>Como preencher o formulário</h2>
+      <p>O representante deve preencher o formulário de cadastro com as informações necessárias, como presença e outras informações relevantes para sua turma. O envio é automático para a planilha correspondente.</p>
+    </section>
+  </main>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('nav.sidebar');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      hamburger.setAttribute('aria-expanded', !expanded);
+      sidebar.classList.toggle('open');
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', false);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

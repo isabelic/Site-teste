@@ -1,74 +1,80 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sitezinho Rápido</title>
-    <meta name="description" content="Uma página simples e responsiva feita rapidinho." />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="container nav">
-        <div class="brand"><span class="logo" aria-hidden="true"></span> Sitezinho</div>
-        <nav>
-          <a href="#sobre">Sobre</a>
-          <a href="#recursos">Recursos</a>
-          <a href="#contato">Contato</a>
-          <a class="btn" href="#" role="button">Começar</a>
-        </nav>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SystemIN</title>
+  <meta name="description" content="Uma página simples e responsiva feita rapidinho." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="logo" aria-hidden="true"></span> SystemIN Info</div>
+      <nav>
+        <a href="Sobre.html">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="sobre">
+      <span class="eyebrow">Site Oficial</span>
+      <h1>Bem-vindo ao SystemIN Info</h1>
+      <p class="sub">Seu guia prático para usar o sistema de forma simples e rápida.</p>
+      <div class="actions">
+        <a class="btn" href="#recursos">Ver recursos</a>
+        <a class="btn" href="#contato">Falar com a gente</a>
       </div>
-    </header>
+    </section>
 
-    <main class="container">
-      <section class="hero" id="sobre">
-        <span class="eyebrow">Feito em minutos</span>
-        <h1>Uma paginazinha bonita e responsiva</h1>
-        <p class="sub">Isto é apenas um modelo rápido para você copiar e sair usando. HTML + CSS puro, sem dependências, com um visual moderno e leve.</p>
-        <div class="actions">
-          <a class="btn" href="#recursos">Ver recursos</a>
-          <a class="btn" href="#contato">Falar com a gente</a>
-        </div>
-      </section>
-
-      <section class="features" id="recursos" aria-label="Recursos">
-        <div class="grid">
-          <article class="card">
-            <h3>Responsivo</h3>
-            <p>Layout que se adapta em qualquer tela usando grid e clamp.</p>
-          </article>
-          <article class="card">
-            <h3>Leve</h3>
-            <p>Apenas um arquivo. Perfeito para protótipos e testes.</p>
-          </article>
-          <article class="card">
-            <h3>Customizável</h3>
-            <p>Troque as cores em <code>:root</code> e pronto.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="cta" id="contato" aria-label="Contato">
-        <div>
-          <h2>Quer novidades?</h2>
-          <p>Digite seu e-mail e enviaremos atualizações ocasionais (fictícias 😉).</p>
-        </div>
-        <form onsubmit="event.preventDefault(); alert('Valeu! (isso é só um demo)')">
-          <input type="email" placeholder="seuemail@exemplo.com" required />
-          <button class="btn" type="submit">Inscrever</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container ft">
-        <small>© <span id="yr"></span> Sitezinho. Todos os direitos reservados.</small>
-        <small><a href="#">Termos</a> · <a href="#">Privacidade</a></small>
+    <section class="features" id="recursos" aria-label="Recursos">
+      <div class="grid">
+        <a href="administrador.html" class="card" role="button" tabindex="0">
+          <h3>Administrador</h3>
+          <p>Layout que se adapta em qualquer tela usando grid e clamp.</p>
+        </a>
+        <a href="coordenacao.html" class="card" role="button" tabindex="0">
+          <h3>Coordenação</h3>
+          <p>Apenas um arquivo. Perfeito para protótipos e testes.</p>
+        </a>
+        <a href="representante.html" class="card" role="button" tabindex="0">
+          <h3>Representantes</h3>
+          <p>Troque as cores em <code>:root</code> e pronto.</p>
+        </a>
       </div>
-    </footer>
+    </section>
 
-    <script>
-      document.getElementById('yr').textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <section class="cta" id="contato" aria-label="Contato">
+      <div>
+        <h2>Quer novidades?</h2>
+        <p>Digite seu e-mail e deixe seu feedback. Enviaremos atualizações e responderemos suas dúvidas.</p>
+      </div>
+      <form id="feedbackForm">
+        <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
+        <textarea name="message" placeholder="Deixe seu feedback aqui..." rows="4" required style="resize: vertical; border-radius: 0.8rem; border: 1px solid rgba(148, 163, 184, .35); background: rgba(2, 6, 23, .6); color: var(--text); padding: 0.75rem 1rem; font-family: inherit; font-size: 1rem; margin-top: 10px;"></textarea>
+        <button class="btn" type="submit" style="margin-top: 10px;">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container ft">
+      <small>© <span id="yr"></span> Sitezinho. Todos os direitos reservados.</small>
+      <small><a href="#">Termos</a> · <a href="#">Privacidade</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Biblioteca EmailJS -->
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
 </html>
