@@ -9,56 +9,135 @@
 </head>
 
 <body class="manual-page">
+  <!-- Botão hamburger para mobile -->
   <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
 
+  <!-- Menu lateral -->
   <nav class="sidebar" aria-label="Menu de navegação">
     <h2>Administrador</h2>
     <ul>
       <li><a href="#cadastrar-turma">Cadastrar Turma</a></li>
-      <li><a href="#visualizar-turmas">Visualizar Turmas</a></li>
+      <li><a href="#remover-turma">Remover Turma</a></li>
       <li><a href="#gerar-relatorios">Gerar Relatórios</a></li>
       <li><a href="index.html">Voltar ao Início</a></li>
     </ul>
   </nav>
 
+  <!-- Conteúdo principal -->
   <main class="content">
     <h1>Manual do Administrador</h1>
 
     <section id="cadastrar-turma">
       <h2>Cadastrar Turma</h2>
-      <p>O administrador pode criar novas turmas através do formulário de cadastro, preenchendo informações como nome da turma, horário, professor responsável, número de alunos e observações.</p>
+    
+      <!-- Passo 1 -->
+      <div class="tutorial-step">
+        <p>1. Na Seção 2, na parte intitulada “Dados do Representante”, localize o card “Selecione a sua turma” e clique duas vezes sobre ele com o mouse para abrir a lista de opções disponíveis.</p>
+        <img src="img/tutorial1.png" alt="Selecione a sua turma">
+      </div>
+    
+      <!-- Passo 2 -->
+      <div class="tutorial-step">
+        <p>2. Desça até o final do card e clique em “Adicionar opção”, inserindo o nome da turma que deseja adicionar.</p>
+        <img src="img/tutorial2.png" alt="Adicionar nova turma">
+      </div>
+    
+      <!-- Passo 3 -->
+      <div class="tutorial-step">
+        <p>3. Após incluir a nova turma, prossiga para criar uma nova seção no formulário, clicando no botão destacado.</p>
+        <img src="img/tutorial3.png" alt="Criar nova seção">
+      </div>
+    
+      <!-- Passo 4 -->
+      <div class="tutorial-step">
+        <p>4. Nomeie a nova seção como “Professores e Unidades Curriculares – (Nome da turma recém-criada)”.</p>
+        <img src="img/tutorial4.png" alt="Nomear seção Professores e Unidades Curriculares">
+      </div>
+    
+      <!-- Passo 5 -->
+      <div class="tutorial-step">
+        <p>5. Adicione a descrição da seção: “Selecione o professor e a unidade curricular que ele lecionou durante o período que você gostaria de cadastrar:”.</p>
+        <img src="img/tutorial5.png" alt="Descrição da seção">
+      </div>
+    
+      <!-- Passo 6 -->
+      <div class="tutorial-step">
+        <p>6. Volte ao card “Selecione a sua turma”, clique duas vezes sobre ele e clique em “Continuar para a próxima seção”.</p>
+        <img src="img/tutorial6.png" alt="Continuar para a próxima seção">
+      </div>
+    
+      <!-- Passo 7 -->
+      <div class="tutorial-step">
+        <p>7. Selecione a seção recém-criada para a turma nova; por exemplo: “Ir para a seção 3 (Professores e Unidades Curriculares – MI81)”.</p>
+        <img src="img/tutorial7.png" alt="Selecionar seção recém-criada">
+      </div>
+    
+      <!-- Passo 8 -->
+      <div class="tutorial-step">
+        <p>8. Edite a seção “Professores e Unidades Curriculares” da turma recém-criada. Clique no símbolo de adicionar pergunta para criar um card que permitirá ao representante selecionar o professor responsável pela aula.</p>
+        <img src="img/tutorial8.png" alt="Adicionar card Selecionar professor">
+      </div>
+    
+      <!-- Passo 9 -->
+      <div class="tutorial-step">
+        <p>9. Insira a pergunta “Selecione o nome do professor:” e, abaixo, liste todos os nomes dos professores para seleção.</p>
+        <img src="img/tutorial9.png" alt="Listar professores">
+      </div>
+    
+      <!-- Passo 10 -->
+      <div class="tutorial-step">
+        <p>10. Duplique o card “Selecione o nome do professor” para criar o card “Selecione a unidade curricular”.</p>
+        <img src="img/tutorial10.png" alt="Duplicar card para unidade curricular">
+      </div>
+    
+      <!-- Passo 11 -->
+      <div class="tutorial-step">
+        <p>11. Troque o título do card para “Selecione a unidade curricular:” e substitua os tópicos pelos nomes das unidades curriculares da turma.</p>
+        <img src="img/tutorial11.png" alt="Configurar unidade curricular">
+      </div>
+    
+      <!-- Passo 12 -->
+      <div class="tutorial-step">
+        <p>12. Crie a seção “Frequência dos Alunos – (nome da turma recém-criada)” para registrar presença e ausência.</p>
+        <img src="img/tutorial12.png" alt="Seção Frequência dos Alunos">
+      </div>
+    
+      <!-- Passo 13 -->
+      <div class="tutorial-step">
+        <p>13. Insira a pergunta “Indique a situação de cada aluno, se esteve presente ou faltante” usando o tópico de grade de múltipla escolha.</p>
+        <img src="img/tutorial13.png" alt="Configurar presença e falta">
+      </div>
+    
+      <!-- Passo 14 -->
+      <div class="tutorial-step">
+        <p>14. Configure as colunas da grade: “Presente” e “Faltante”. Adicione os nomes dos alunos nas linhas correspondentes.</p>
+        <img src="img/tutorial14.png" alt="Tabela de presença dos alunos">
+      </div>
+    
+      <!-- Passo 15 -->
+      <div class="tutorial-step">
+        <p>15. Após adicionar todos os nomes, clique em “Continuar para a próxima seção” e selecione “Ir para a seção cadastrar aula”, garantindo que o representante será direcionado corretamente.</p>
+        <img src="img/tutorial15.png" alt="Continuar para cadastrar aula">
+      </div>
+    
     </section>
+    
 
-    <section id="visualizar-turmas">
+    <section id="tutorial-step">
       <h2>Visualizar Turmas</h2>
       <p>O administrador pode acessar a lista de turmas cadastradas e visualizar os dados organizados em planilhas específicas para cada turma.</p>
+      <img src="img/visualizar-turmas.png" alt="Exemplo de visualização de turmas">
     </section>
 
     <section id="gerar-relatorios">
       <h2>Gerar Relatórios</h2>
       <p>O administrador pode gerar relatórios com os dados das turmas, exportando-os para planilhas para análise e acompanhamento.</p>
+      <img src="img/gerar-relatorios.png" alt="Exemplo de relatório">
     </section>
   </main>
 
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const sidebar = document.querySelector('nav.sidebar');
-
-    hamburger.addEventListener('click', () => {
-      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-      hamburger.setAttribute('aria-expanded', !expanded);
-      sidebar.classList.toggle('open');
-    });
-
-    sidebar.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          sidebar.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', false);
-        }
-      });
-    });
-  </script>
+  <!-- Script externo para menu e scroll suave -->
+  <script src="js/manual.js"></script>
 </body>
 
 </html>

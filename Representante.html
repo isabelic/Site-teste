@@ -28,25 +28,8 @@
     </section>
   </main>
 
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const sidebar = document.querySelector('nav.sidebar');
-
-    hamburger.addEventListener('click', () => {
-      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-      hamburger.setAttribute('aria-expanded', !expanded);
-      sidebar.classList.toggle('open');
-    });
-
-    sidebar.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          sidebar.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', false);
-        }
-      });
-    });
-  </script>
+  <!-- Script JS externo -->
+  <script src="js/manual.js"></script>
 </body>
 
 </html>
