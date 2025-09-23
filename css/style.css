@@ -334,7 +334,7 @@ nav.sidebar ul li a:focus {
 }
 
 main.content {
-  margin-left: 270px;
+  margin-left: 550px;
   padding: 40px 30px;
   max-width: 900px;
   flex-grow: 1;
@@ -552,6 +552,16 @@ p {
   gap: 10px;
   justify-content: flex-end;
 }
+
+.tutorial-step img {
+  max-width: 1100px;  /* diminui largura máxima */
+  width: 100%;       /* ocupa até 100% do espaço disponível */
+  height: auto;      /* mantém proporção */
+  display: block;
+  margin: 10px auto; /* centraliza */
+  border-radius: 8px; /* opcional: cantos arredondados */
+}
+
 
 @media (max-width: 800px) {
   .cta form {
